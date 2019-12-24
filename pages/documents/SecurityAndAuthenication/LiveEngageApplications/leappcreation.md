@@ -1,27 +1,27 @@
 ---
-pagename: Installing LiveEngage Applications
+pagename: Installing LivePerson Applications
 redirect_from:
   - guides-le-applications-installing.html
 Keywords:
 sitesection: Documents
 categoryname: "Security & Authentication"
-documentname: LiveEngage Applications
+documentname: LivePerson Applications
 order: 20
-permalink: liveengage-applications-installing-liveengage-applications.html
+permalink: livePerson-applications-installing-livePerson-applications.html
 indicator: both
 ---
 
 ### Overview
 
-Currently, installation of LiveEngage Applications is performed by LivePerson's internal resources (account team, DevSupport, Tier 1, etc). In order to request this installation, you must first fill out the following schema according to your application needs. Once that is done, please contact the relevant LivePerson resource for your account and they will perform the installation.
+Currently, installation of LivePerson Applications is performed by LivePerson's internal resources (account team, DevSupport, Tier 1, etc). In order to request this installation, you must first fill out the following schema according to your application needs. Once that is done, please contact the relevant LivePerson resource for your account and they will perform the installation.
 
-Once the application has been installed, the LivePerson resource will send you your application key and secret which are required for OAuth2.0 authentication. In the future, installing an application will be possible on your own through LiveEngage, but currently the installation process must be followed.
+Once the application has been installed, the LivePerson resource will send you your Client ID  and secret ID which are required for OAuth2.0 authentication. In the future, installing an application will be possible on your own through the Applications dashboard, but currently the installation process must be followed.
 
-### LiveEngage Application Manifest Schema - Parameters
+### LivePerson Application Manifest Schema - Parameters
 
 | Property | Description | Type | Required| Notes|
 |--- | --- | ---| ---| ---|
-|client_name | Choose the name for your Connector application | string| Yes | Can be internationalized by adding 5646 language tag after hash chararcter. <br /> Max length: 128|
+|client_name | Choose the name for your Connector application | string| Yes | Can be internationalized by adding 5646 language tag after hash character. <br /> Max length: 128|
 |description | App description | string | No| max length: 256|
 |grant_types | Authorization grant according to OAuth 2.0 | array | No | supported values: "client_credentials"<br />"authorization_code"<br />"refresh_token"|
 |redirect_uris | For web/native apps, the URIs to which the JWT/code will be sent after redirect | array of strings | No | max length: 128|
